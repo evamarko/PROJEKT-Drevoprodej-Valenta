@@ -40,19 +40,16 @@
 
 //Section services
 .services {
-  padding: base.$spacer;
   display: grid;
   grid-template-rows: 3fr;
   gap: 20px;
   margin: 0 auto;
 
   @media screen and (min-width: 540px) {
-    padding: 80px;
     width: 80%;
   }
 
   @media screen and (min-width: 960px) {
-    padding: 100px;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }

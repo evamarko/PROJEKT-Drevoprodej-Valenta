@@ -1,0 +1,78 @@
+@use "colors";
+@use "base";
+
+//Sekce kontakt
+
+//Odkaz e-mail
+.contact__email {
+  color: colors.$color-wood-light2;
+  text-decoration: none;
+}
+
+.contact__email:hover,
+.contact__email:focus,
+.contact__email:active {
+  color: colors.$color-wood-light3;
+}
+
+//Provozní doba
+.contact__times {
+  background-color: colors.$color-wood-light;
+  width: 180px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.contact__times p {
+  margin: 0;
+}
+
+//Formulář
+.contact__form {
+  background-color: colors.$color-wood-light;
+  padding: 20px;
+}
+
+.contact__headline2 {
+  margin: 0;
+}
+
+//Labels
+.contact__form-label {
+  display: block;
+  margin-top: 15px;
+}
+
+//Inputs
+.contact__form-input,
+.contact__form-textarea {
+  width: 100%;
+  padding: 5px;
+  font-family: base.$default-font;
+  font-size: base.$body-text;
+  outline: none;
+}
+
+.contact__form-input:focus,
+.contact__form-textarea:focus {
+  border: 2px solid colors.$color-wood-light2;
+}
+
+//Button
+.contact__form-button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  font-family: base.$default-font;
+  font-size: base.$body-text;
+  border: none;
+  background-color: colors.$color-wood-light4;
+  font-weight: bold;
+}
+
+.contact__form-button:active,
+.contact__form-button:hover,
+.contact__form-button:focus {
+  background-color: colors.$color-wood-light2;
+  color: colors.$color-white;
+}

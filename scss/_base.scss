@@ -23,8 +23,6 @@ html {
 body {
   font-family: $default-font;
   font-size: $body-text;
-  //color: colors.$color-black;
-  //background-color: colors.$color-grey;
   margin: 0;
   padding: 0;
   line-height: 1.8;
@@ -33,4 +31,52 @@ body {
 //Responzivní obrázky
 img {
   width: 100%;
+}
+
+//Padding sekce
+.about,
+.services,
+.contact {
+  padding: $spacer;
+
+  @media screen and (min-width: 540px) {
+    padding: 80px;
+  }
+
+  @media screen and (min-width: 960px) {
+    padding: 100px;
+  }
+}
+
+//H1
+.about__headline1,
+.contact__headline1 {
+  font-size: 40px;
+  color: colors.$color-wood-light2;
+  text-align: center;
+  margin: 0;
+
+  @media screen and (min-width: 540px) {
+    font-size: 50px;
+  }
+
+  @media screen and (min-width: 960px) {
+    font-size: 60px;
+  }
+}
+
+//H2
+.about__headline2,
+.contact__headline2 {
+  color: colors.$color-wood-light2;
+  text-align: center;
+  font-size: 30px;
+
+  @media screen and (min-width: 540px) {
+    font-size: 40px;
+  }
+
+  @media screen and (min-width: 960px) {
+    font-size: 50px;
+  }
 }

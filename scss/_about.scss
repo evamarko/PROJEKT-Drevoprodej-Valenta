@@ -1,55 +1,15 @@
 @use "colors";
 @use "base";
 
-//Section about
+//Sekce about
 .about {
-  padding: base.$spacer;
   text-align: justify;
-
-  @media screen and (min-width: 540px) {
-    padding: 80px;
-  }
-
-  @media screen and (min-width: 960px) {
-    padding: 100px;
-  }
-}
-
-//Main headline H1
-.about__headline1 {
-  font-size: 40px;
-  color: colors.$color-wood-light2;
-  text-align: center;
-  margin: 0;
-
-  @media screen and (min-width: 540px) {
-    font-size: 50px;
-  }
-
-  @media screen and (min-width: 960px) {
-    font-size: 60px;
-  }
 }
 
 //Image
 .about__image {
   border-radius: 0 30px 30px 30px;
   margin: base.$spacer 0;
-}
-
-//Headline H2
-.about__headline2 {
-  color: colors.$color-wood-light2;
-  text-align: center;
-  font-size: 30px;
-
-  @media screen and (min-width: 540px) {
-    font-size: 40px;
-  }
-
-  @media screen and (min-width: 960px) {
-    font-size: 50px;
-  }
 }
 
 //Icons

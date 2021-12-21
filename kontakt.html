@@ -4,22 +4,29 @@ title: Kontakt - Dřevoprodej Valenta Prušánky
 ---
 
 <section class="contact">
-  <h1>kontakt</h1>
+  <h1 class="contact__headline1">kontakt</h1>
 
   <p>
     <strong>Dřevoprodej Valenta </strong> <br />
     Prušánky 188 <br />
     691 21 Prušánky
   </p>
-  <p><strong>telefon: </strong>+420 602 551 499</p>
-  <p><strong>e-mail:</strong> info@drevoprodej-prusanky.cz</p>
-
+  <p><strong>telefon: +420 602 551 499 </strong></p>
   <p>
-    <strong>provozní doba:</strong> <br />
-    po - čt 7:30 - 16:00 <br />
-    pá 7:30 - 15:00 <br />
-    so dohodou
+    <strong>e-mail:</strong>
+    <a class="contact__email" href="mailto:info@drevoprodej-prusanky.cz"
+      >info@drevoprodej-prusanky.cz</a
+    >
   </p>
+
+  <div class="contact__times">
+    <p>
+      <strong>provozní doba:</strong> <br />
+      po - čt 7:30 - 16:00 <br />
+      pá 7:30 - 15:00 <br />
+      so dohodou
+    </p>
+  </div>
 
   <p>
     <strong>IČ:</strong> 49132466 <br />
@@ -31,23 +38,42 @@ title: Kontakt - Dřevoprodej Valenta Prušánky
     Městský úřad Břeclav č.j.:OŽÚ/126/2012/Pe/3
   </p>
 
-  <h1>kontaktní formulář</h1>
-  <form action="" method="post">
-    <div>
-      <label for="email">e-mail</label>
-      <input type="email" name="email" id="email" required />
-    </div>
+  <div class="contact__form">
+    <h2 class="contact__headline2">kontaktní formulář</h2>
+    <form action="" method="post">
+      <div>
+        <label class="contact__form-label" for="email">e-mail</label>
+        <input
+          class="contact__form-input"
+          type="email"
+          name="email"
+          id="email"
+          required
+        />
+      </div>
 
-    <div>
-      <label for="telefon">telefon</label>
-      <input type="tel" name="telefon" id="telefon" />
-    </div>
+      <div>
+        <label class="contact__form-label" for="telefon">telefon</label>
+        <input
+          class="contact__form-input"
+          type="tel"
+          name="telefon"
+          id="telefon"
+        />
+      </div>
 
-    <div>
-      <label for="zprava">zpráva</label>
-      <textarea name="zprava" id="zprava" rows="6" required></textarea>
-    </div>
+      <div>
+        <label class="contact__form-label" for="zprava">zpráva</label>
+        <textarea
+          class="contact__form-textarea"
+          name="zprava"
+          id="zprava"
+          rows="6"
+          required
+        ></textarea>
+      </div>
 
-    <button type="submit">Odeslat zprávu</button>
-  </form>
+      <button class="contact__form-button" type="submit">odeslat zprávu</button>
+    </form>
+  </div>
 </section>
