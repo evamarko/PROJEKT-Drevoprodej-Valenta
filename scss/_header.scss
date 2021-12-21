@@ -1,0 +1,44 @@
+@use "colors";
+@use "base";
+
+//Header
+.header {
+  background-color: colors.$color-wood-light;
+  color: colors.$color-black;
+}
+
+//Background
+.header__background {
+  background-image: url("../images/wood.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+  background-attachment: fixed;
+
+  @media screen and (min-width: 540px) {
+    height: 400px;
+  }
+
+  @media screen and (min-width: 960px) {
+    height: 500px;
+  }
+}
+
+.header__headline1 {
+  font-size: 50px;
+  margin: 0;
+  padding-top: 211px;
+  text-align: center;
+  line-height: 1;
+
+  @media screen and (min-width: 540px) {
+    font-size: 80px;
+    padding-top: 257px;
+  }
+
+  @media screen and (min-width: 960px) {
+    font-size: 150px;
+    padding-top: 232px;
+  }
+}

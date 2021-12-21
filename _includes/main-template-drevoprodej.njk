@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="menu">
+        <input type="checkbox" class="menu__checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox" class="menu__toggler">☰</label>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="">O firmě</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Služby</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Dřevoprodej</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">Dřevovýroba</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="/kontakt/">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__background">
+        <h1 class="header__headline1">
+          Dřevoprodej <br />
+          Valenta
+        </h1>
+      </div>
+    </header>
+    <main>
+      {{ content | safe }}
+    </main>
+    <footer class="footer">
+      <div class="footer__contact">
+        <h2 class="footer__headline2">
+          Dřevoprodej <br />
+          Valenta
+        </h2>
+
+        <p>
+          <strong> sídlo firmy:</strong> <br />
+          Prušánky 188<br />
+          691 21 Prušánky
+        </p>
+
+        <p>
+          <strong> telefon:</strong> <br />
+          +420 602 551 499
+        </p>
+        <p>
+          <strong>e-mail:</strong> <br />
+          <a class="footer__email" href="mailto:info@drevoprodej-prusanky.cz"
+            >info@drevoprodej-prusanky.cz</a
+          >
+        </p>
+
+        <p>
+          <strong>provozní doba:</strong> <br />
+          po - čt 7:30 - 16:00 <br />
+          pá 7:30 - 15:00 <br />
+          so dohodou
+        </p>
+      </div>
+
+      <div class="footer__map">
+        <iframe
+          class="footer__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d88402.45990008897!2d16.925017603626117!3d48.82657719673358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47132a3b556a0f3d%3A0x58586ea763ecfb80!2zVHJ1aGzDocWZc3R2w60gLSBExZlldm9wcm9kZWo!5e0!3m2!1scs!2sca!4v1636307522813!5m2!1scs!2sca"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="footer__copyright"><p>©2022 | Dřevoprodej - Prušánky</p></div>
+    </footer>
+
+    <script>
+      function moreServices() {
+        let x = document.getElementById("moreServices");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

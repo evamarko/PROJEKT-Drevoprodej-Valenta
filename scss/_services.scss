@@ -1,0 +1,103 @@
+@use "colors";
+@use "base";
+
+//Hero and headline service
+.hero {
+  background-image: url("../images/wood2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  background-attachment: fixed;
+
+  @media screen and (min-width: 540px) {
+    height: 200px;
+  }
+
+  @media screen and (min-width: 960px) {
+    height: 250px;
+  }
+}
+
+.hero__headline1 {
+  font-size: 50px;
+  color: colors.$color-black;
+  margin: 0;
+  text-transform: lowercase;
+  text-align: center;
+  padding-top: 91px;
+
+  @media screen and (min-width: 540px) {
+    font-size: 80px;
+    padding-top: 105px;
+  }
+
+  @media screen and (min-width: 960px) {
+    font-size: 120px;
+    padding-top: 107px;
+  }
+}
+
+//Section services
+.services {
+  padding: base.$spacer;
+  display: grid;
+  grid-template-rows: 3fr;
+  gap: 20px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 540px) {
+    padding: 80px;
+    width: 80%;
+  }
+
+  @media screen and (min-width: 960px) {
+    padding: 100px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.services__div {
+  border: 3px solid colors.$color-wood-light2;
+  cursor: pointer;
+}
+
+.services__div:active,
+.services__div:hover,
+.services__div:focus {
+  background-color: colors.$color-wood-light2;
+  color: colors.$color-white;
+}
+
+.services__text {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+.services__more {
+  display: none;
+  grid-column: 1 / -1;
+}
+
+.services__more-grid {
+  @media screen and (min-width: 540px) {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+.services__icon {
+  display: none;
+
+  @media screen and (min-width: 540px) {
+    width: 60px;
+
+    display: block;
+  }
+}
