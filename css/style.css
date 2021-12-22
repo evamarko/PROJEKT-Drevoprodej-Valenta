@@ -246,8 +246,7 @@ img {
 
 @media screen and (min-width: 540px) {
   .about__grid {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
   }
 }
 @media screen and (min-width: 960px) {
@@ -379,6 +378,11 @@ img {
   padding: 20px;
   margin: 0 auto;
 }
+@media screen and (min-width: 540px) {
+  .contact__times {
+    margin: 0;
+  }
+}
 
 .contact__times p {
   margin: 0;
@@ -387,6 +391,7 @@ img {
 .contact__form {
   background-color: #fff8dc;
   padding: 20px;
+  margin-top: 30px;
 }
 
 .contact__headline2 {
@@ -428,6 +433,37 @@ img {
 .contact__form-button:focus {
   background-color: #8b6914;
   color: #fafafa;
+}
+
+.contact__form-label-required:after {
+  content: "*";
+  color: red;
+  margin-left: 4px;
+}
+
+.contact__map {
+  height: 350px;
+  width: 100%;
+  margin-top: 30px;
+}
+@media screen and (min-width: 540px) {
+  .contact__map {
+    height: 100%;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .contact__flexbox {
+    display: flex;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .contact__flexbox-item {
+    flex-basis: 50%;
+  }
 }
 
 .footer {

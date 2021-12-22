@@ -5,44 +5,51 @@ title: Kontakt - Dřevoprodej Valenta Prušánky
 
 <section class="contact">
   <h1 class="contact__headline1">kontakt</h1>
+  <div class="contact__flexbox">
+    <div class="contact__flexbox-item">
+      <p>
+        <strong>Dřevoprodej Valenta </strong> <br />
+        Prušánky 188 <br />
+        691 21 Prušánky
+      </p>
+      <p><strong>telefon: +420 602 551 499 </strong></p>
+      <p>
+        <strong>e-mail:</strong>
+        <a class="contact__email" href="mailto:info@drevoprodej-prusanky.cz"
+          >info@drevoprodej-prusanky.cz</a
+        >
+      </p>
 
-  <p>
-    <strong>Dřevoprodej Valenta </strong> <br />
-    Prušánky 188 <br />
-    691 21 Prušánky
-  </p>
-  <p><strong>telefon: +420 602 551 499 </strong></p>
-  <p>
-    <strong>e-mail:</strong>
-    <a class="contact__email" href="mailto:info@drevoprodej-prusanky.cz"
-      >info@drevoprodej-prusanky.cz</a
-    >
-  </p>
+      <div class="contact__times">
+        <p>
+          <strong>provozní doba:</strong> <br />
+          <strong> po - čt </strong> 7:30 - 16:00 <br />
+          <strong> pá </strong> 7:30 - 15:00 <br />
+          <strong> so </strong> dohodou
+        </p>
+      </div>
+    </div>
 
-  <div class="contact__times">
-    <p>
-      <strong>provozní doba:</strong> <br />
-      po - čt 7:30 - 16:00 <br />
-      pá 7:30 - 15:00 <br />
-      so dohodou
-    </p>
+    <div class="contact__flexbox-item">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d88402.45990008897!2d16.925017603626117!3d48.82657719673358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47132a3b556a0f3d%3A0x58586ea763ecfb80!2zVHJ1aGzDocWZc3R2w60gLSBExZlldm9wcm9kZWo!5e0!3m2!1scs!2sca!4v1636307522813!5m2!1scs!2sca"
+        class="contact__map"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
   </div>
-
-  <p>
-    <strong>IČ:</strong> 49132466 <br />
-    <strong>DIČ:</strong> CZ7106134057
-  </p>
-
-  <p>
-    <strong>registrace:</strong> <br />
-    Městský úřad Břeclav č.j.:OŽÚ/126/2012/Pe/3
-  </p>
 
   <div class="contact__form">
     <h2 class="contact__headline2">kontaktní formulář</h2>
     <form action="" method="post">
       <div>
-        <label class="contact__form-label" for="email">e-mail</label>
+        <label
+          class="contact__form-label contact__form-label-required"
+          for="email"
+          >e-mail</label
+        >
         <input
           class="contact__form-input"
           type="email"
@@ -63,7 +70,11 @@ title: Kontakt - Dřevoprodej Valenta Prušánky
       </div>
 
       <div>
-        <label class="contact__form-label" for="zprava">zpráva</label>
+        <label
+          class="contact__form-label contact__form-label-required"
+          for="zprava"
+          >zpráva</label
+        >
         <textarea
           class="contact__form-textarea"
           name="zprava"

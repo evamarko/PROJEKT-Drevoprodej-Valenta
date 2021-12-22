@@ -21,6 +21,10 @@
   width: 180px;
   padding: 20px;
   margin: 0 auto;
+
+  @media screen and (min-width: 540px) {
+    margin: 0;
+  }
 }
 
 .contact__times p {
@@ -31,6 +35,7 @@
 .contact__form {
   background-color: colors.$color-wood-light;
   padding: 20px;
+  margin-top: base.$spacer;
 }
 
 .contact__headline2 {
@@ -75,4 +80,37 @@
 .contact__form-button:focus {
   background-color: colors.$color-wood-light2;
   color: colors.$color-white;
+}
+
+//Formulář červená hvězdička
+.contact__form-label-required:after {
+  content: "*";
+  color: red;
+  margin-left: 4px;
+}
+
+//Mapa kontakt
+.contact__map {
+  height: 350px;
+  width: 100%;
+  margin-top: base.$spacer;
+
+  @media screen and (min-width: 540px) {
+    height: 100%;
+    margin-top: 0;
+  }
+}
+
+//Flexbox kontakt
+.contact__flexbox {
+  @media screen and (min-width: 540px) {
+    display: flex;
+    margin-top: base.$spacer;
+  }
+}
+
+.contact__flexbox-item {
+  @media screen and (min-width: 540px) {
+    flex-basis: 50%;
+  }
 }
