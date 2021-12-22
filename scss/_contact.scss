@@ -36,6 +36,16 @@
   background-color: colors.$color-wood-light;
   padding: 20px;
   margin-top: base.$spacer;
+
+  @media screen and (min-width: 540px) {
+    margin-top: 80px;
+    padding: 60px;
+  }
+
+  @media screen and (min-width: 960px) {
+    width: 100%;
+    //padding: 80px;
+  }
 }
 
 .contact__headline2 {
@@ -73,6 +83,12 @@
   border: none;
   background-color: colors.$color-wood-light4;
   font-weight: bold;
+
+  @media screen and (min-width: 540px) {
+    width: 200px;
+    margin: 15px auto 0 auto;
+    display: block;
+  }
 }
 
 .contact__form-button:active,
@@ -109,8 +125,28 @@
   }
 }
 
-.contact__flexbox-item {
+.contact__flexbox-item1,
+.contact__flexbox-item2 {
   @media screen and (min-width: 540px) {
     flex-basis: 50%;
+  }
+}
+
+.contact__flexbox-item1 {
+  @media screen and (min-width: 960px) {
+    flex-basis: 40%;
+  }
+}
+
+.contact__flexbox-item2 {
+  @media screen and (min-width: 960px) {
+    flex-basis: 60%;
+  }
+}
+
+//Nadpis H1
+.contact__headline1 {
+  @media screen and (min-width: 960px) {
+    text-align: left;
   }
 }
