@@ -36,6 +36,8 @@ img {
 //Padding sekce
 .about,
 .services,
+.production,
+.services2,
 .contact {
   padding: $spacer;
 
@@ -52,6 +54,8 @@ img {
 
 //H1
 .about__headline1,
+.production__headline1,
+.services2__headline1,
 .contact__headline1 {
   font-size: 40px;
   color: colors.$color-wood-light2;

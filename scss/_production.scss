@@ -1,0 +1,17 @@
+@use "colors";
+@use "base";
+
+//Grid galerie dřevovýroba
+.production__grid {
+  @media screen and (min-width: 540px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 80px;
+  }
+
+  @media screen and (min-width: 960px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 100px;
+  }
+}
