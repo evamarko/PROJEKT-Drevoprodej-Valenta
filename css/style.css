@@ -21,16 +21,23 @@ img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .about,
 .services,
+.sales,
 .production,
 .services2,
 .contact {
   padding: 30px;
+  text-align: justify;
 }
 @media screen and (min-width: 540px) {
   .about,
 .services,
+.sales,
 .production,
 .services2,
 .contact {
@@ -40,6 +47,7 @@ img {
 @media screen and (min-width: 960px) {
   .about,
 .services,
+.sales,
 .production,
 .services2,
 .contact {
@@ -50,6 +58,7 @@ img {
 }
 
 .about__headline1,
+.sales__headline1,
 .production__headline1,
 .services2__headline1,
 .contact__headline1 {
@@ -60,6 +69,7 @@ img {
 }
 @media screen and (min-width: 540px) {
   .about__headline1,
+.sales__headline1,
 .production__headline1,
 .services2__headline1,
 .contact__headline1 {
@@ -68,6 +78,7 @@ img {
 }
 @media screen and (min-width: 960px) {
   .about__headline1,
+.sales__headline1,
 .production__headline1,
 .services2__headline1,
 .contact__headline1 {
@@ -313,30 +324,37 @@ img {
   }
 }
 
+.sales__grid,
 .services {
   display: grid;
   grid-template-rows: 3fr;
   gap: 20px;
 }
 @media screen and (min-width: 540px) {
-  .services {
+  .sales__grid,
+.services {
     width: 80%;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 960px) {
-  .services {
+  .sales__grid,
+.services {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
   }
 }
 
+.sales__div,
 .services__div {
   border: 3px solid #8b6914;
   cursor: pointer;
 }
 
+.sales__div:active,
+.sales__div:hover,
+.sales__div:focus,
 .services__div:active,
 .services__div:hover,
 .services__div:focus {
@@ -344,6 +362,7 @@ img {
   color: #fafafa;
 }
 
+.sales__text,
 .services__text {
   font-weight: bold;
   font-size: 20px;
@@ -374,6 +393,18 @@ img {
     width: 60px;
     display: block;
   }
+}
+
+.sales__headline1 {
+  margin-bottom: 50px;
+}
+
+a {
+  color: #080808;
+}
+
+.production {
+  text-align: justify;
 }
 
 @media screen and (min-width: 540px) {

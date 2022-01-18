@@ -33,13 +33,19 @@ img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 //Padding sekce
 .about,
 .services,
+.sales,
 .production,
 .services2,
 .contact {
   padding: $spacer;
+  text-align: justify;
 
   @media screen and (min-width: 540px) {
     padding: 80px;
@@ -54,6 +60,7 @@ img {
 
 //H1
 .about__headline1,
+.sales__headline1,
 .production__headline1,
 .services2__headline1,
 .contact__headline1 {

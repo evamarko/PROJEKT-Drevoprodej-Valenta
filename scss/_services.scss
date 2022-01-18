@@ -38,7 +38,8 @@
   }
 }
 
-//Section services
+//Section services, sales
+.sales__grid,
 .services {
   display: grid;
   grid-template-rows: 3fr;
@@ -56,11 +57,15 @@
   }
 }
 
+.sales__div,
 .services__div {
   border: 3px solid colors.$color-wood-light2;
   cursor: pointer;
 }
 
+.sales__div:active,
+.sales__div:hover,
+.sales__div:focus,
 .services__div:active,
 .services__div:hover,
 .services__div:focus {
@@ -68,6 +73,7 @@
   color: colors.$color-white;
 }
 
+.sales__text,
 .services__text {
   font-weight: bold;
   font-size: 20px;

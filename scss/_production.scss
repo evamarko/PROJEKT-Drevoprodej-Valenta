@@ -1,6 +1,10 @@
 @use "colors";
 @use "base";
 
+.production {
+  text-align: justify;
+}
+
 //Grid galerie dřevovýroba
 .production__grid {
   @media screen and (min-width: 540px) {
