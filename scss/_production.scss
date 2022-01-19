@@ -1,12 +1,14 @@
 @use "colors";
 @use "base";
 
-.production {
+.production,
+.sortiment {
   text-align: justify;
 }
 
-//Grid galerie dřevovýroba
-.production__grid {
+//Grid galerie dřevovýroba, a sortiment
+.production__grid,
+.sortiment__grid {
   @media screen and (min-width: 540px) {
     display: grid;
     grid-template-columns: 1fr 1fr;

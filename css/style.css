@@ -28,6 +28,7 @@ a {
 .about,
 .services,
 .sales,
+.sortiment,
 .production,
 .services2,
 .contact {
@@ -38,6 +39,7 @@ a {
   .about,
 .services,
 .sales,
+.sortiment,
 .production,
 .services2,
 .contact {
@@ -48,6 +50,7 @@ a {
   .about,
 .services,
 .sales,
+.sortiment,
 .production,
 .services2,
 .contact {
@@ -87,6 +90,7 @@ a {
 }
 
 .about__headline2,
+.sortiment__headline2,
 .contact__headline2 {
   color: #8b6914;
   text-align: center;
@@ -94,12 +98,14 @@ a {
 }
 @media screen and (min-width: 540px) {
   .about__headline2,
+.sortiment__headline2,
 .contact__headline2 {
     font-size: 40px;
   }
 }
 @media screen and (min-width: 960px) {
   .about__headline2,
+.sortiment__headline2,
 .contact__headline2 {
     font-size: 50px;
   }
@@ -403,12 +409,14 @@ a {
   color: #080808;
 }
 
-.production {
+.production,
+.sortiment {
   text-align: justify;
 }
 
 @media screen and (min-width: 540px) {
-  .production__grid {
+  .production__grid,
+.sortiment__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -416,7 +424,8 @@ a {
   }
 }
 @media screen and (min-width: 960px) {
-  .production__grid {
+  .production__grid,
+.sortiment__grid {
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 100px;
   }
