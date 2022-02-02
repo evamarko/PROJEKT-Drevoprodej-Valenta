@@ -21,3 +21,9 @@
     margin-top: 100px;
   }
 }
+
+//Délka řádků, šířka odstavců
+.production p {
+  max-width: 500px;
+  margin: 0 auto;
+}

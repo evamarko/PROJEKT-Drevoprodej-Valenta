@@ -93,6 +93,8 @@
     grid-template-rows: 1fr;
     align-items: center;
     gap: 50px;
+    margin: 0 auto;
+    max-width: 600px;
   }
 }
 
@@ -104,4 +106,9 @@
 
     display: block;
   }
+}
+
+//Délka řádků, šířka odstavců
+.services2 p {
+  //max-width: 500px;
 }
