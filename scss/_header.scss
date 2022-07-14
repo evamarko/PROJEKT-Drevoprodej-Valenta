@@ -42,3 +42,47 @@
     padding-top: 232px;
   }
 }
+
+//Kontakty
+.header__contact {
+  text-align: right;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  background-color: colors.$color-wood-light2;
+
+  @media screen and (min-width: 540px) {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media screen and (min-width: 960px) {
+    justify-content: flex-start;
+  }
+}
+
+.header__contact--phone,
+.header__contact--email {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  padding-right: 30px;
+  font-size: 20px;
+  color: colors.$color-wood-light;
+
+  @media screen and (min-width: 540px) {
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 960px) {
+    font-size: 24px;
+    padding-left: 30px;
+  }
+}
+
+.header__contact--email:active,
+.header__contact--email:focus,
+.header__contact--email:hover {
+  text-decoration: underline;
+}

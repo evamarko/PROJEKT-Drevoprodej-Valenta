@@ -15,26 +15,57 @@
   </head>
   <body>
     <header class="header">
+      <div class="header__contact">
+        <p class="header__contact--phone">+420 602 551 499</p>
+
+        <a
+          class="header__contact--email"
+          href="mailto:info@drevoprodejvalenta.cz"
+          >info@drevoprodejvalenta.cz</a
+        >
+      </div>
+
       <nav class="menu">
         <input type="checkbox" class="menu__checkbox" id="menu-checkbox" />
         <label for="menu-checkbox" class="menu__toggler">☰</label>
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link" href="/">O firmě</a>
+            <a
+              class="menu__link {{ 'menu__link--active' if page.fileSlug === '' }}"
+              href="/"
+              >O firmě</a
+            >
           </li>
 
           <li class="menu__item">
-            <a class="menu__link" href="/drevoprodej/">Dřevoprodej</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/drevovyroba/">Dřevovýroba</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/sluzby/">Služby</a>
+            <a
+              class="menu__link {{ 'menu__link--active' if page.fileSlug === 'drevoprodej' }}"
+              href="/drevoprodej/"
+              >Dřevoprodej</a
+            >
           </li>
 
           <li class="menu__item">
-            <a class="menu__link" href="/kontakt/">Kontakt</a>
+            <a
+              class="menu__link {{ 'menu__link--active' if page.fileSlug === 'drevovyroba' }}"
+              href="/drevovyroba/"
+              >Dřevovýroba</a
+            >
+          </li>
+          <li class="menu__item">
+            <a
+              class="menu__link {{ 'menu__link--active' if page.fileSlug === 'sluzby' }}"
+              href="/sluzby/"
+              >Služby</a
+            >
+          </li>
+
+          <li class="menu__item">
+            <a
+              class="menu__link {{ 'menu__link--active' if page.fileSlug === 'kontakt' }}"
+              href="/kontakt/"
+              >Kontakt</a
+            >
           </li>
         </ul>
       </nav>
@@ -68,8 +99,8 @@
         </p>
         <p>
           <strong>e-mail:</strong> <br />
-          <a class="footer__email" href="mailto:info@drevoprodej-prusanky.cz"
-            >info@drevoprodej-prusanky.cz</a
+          <a class="footer__email" href="mailto:info@drevoprodejvalenta.cz"
+            >info@drevoprodejvalenta.cz</a
           >
         </p>
 
@@ -90,7 +121,7 @@
           loading="lazy"
         ></iframe>
       </div>
-      <div class="footer__copyright"><p>©2022 | Dřevoprodej - Prušánky</p></div>
+      <div class="footer__copyright"><p>©2022 | Dřevoprodej Valenta</p></div>
     </footer>
 
     <script>
