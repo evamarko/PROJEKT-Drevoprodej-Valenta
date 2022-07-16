@@ -11,7 +11,7 @@ html {
 
 body {
   font-family: "Rajdhani", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   margin: 0;
   padding: 0;
   line-height: 1.8;
@@ -135,16 +135,17 @@ a {
 }
 
 .header__headline1 {
-  font-size: 50px;
+  font-size: 60px;
   margin: 0;
-  padding-top: 211px;
-  text-align: center;
+  padding-top: 192px;
+  text-align: right;
   line-height: 1;
 }
 @media screen and (min-width: 540px) {
   .header__headline1 {
-    font-size: 80px;
-    padding-top: 257px;
+    font-size: 100px;
+    padding-top: 221px;
+    padding-right: 30px;
   }
 }
 @media screen and (min-width: 960px) {
@@ -282,43 +283,54 @@ a {
 }
 
 .about {
-  text-align: justify;
+  text-align: center;
 }
 
-.about__image {
-  border-radius: 0 30px 30px 30px;
-  margin: 30px 0;
+.about__content {
+  padding: 30px;
+}
+@media screen and (min-width: 1175px) {
+  .about__content {
+    padding: 0 30px;
+  }
 }
 
 .about__icon {
   width: 40px;
 }
 
-.about__flexbox-icon {
+.about__flexbox-icon,
+.services__flexbox-icon {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  max-width: 250px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 540px) {
-  .about__flexbox-icon {
+  .about__flexbox-icon,
+.services__flexbox-icon {
     flex-direction: column;
     justify-content: center;
+    max-width: 100%;
   }
 }
 
-.about__icon-text {
+.about__icon-text,
+.services__icon-text {
   margin-left: 15px;
   font-weight: bold;
   text-align: center;
 }
 @media screen and (min-width: 540px) {
-  .about__icon-text {
+  .about__icon-text,
+.services__icon-text {
     margin-left: 0;
   }
 }
 
 @media screen and (min-width: 540px) {
-  .about__flexbox-main-icon {
+  .about__flexbox-main-icon,
+.services__flexbox {
     display: flex;
     justify-content: space-evenly;
     margin-top: 50px;
@@ -326,7 +338,8 @@ a {
   }
 }
 @media screen and (min-width: 960px) {
-  .about__flexbox-main-icon {
+  .about__flexbox-main-icon,
+.services__flexbox {
     justify-content: center;
     gap: 100px;
   }
@@ -341,16 +354,18 @@ a {
 @media screen and (min-width: 960px) {
   .about__grid {
     display: grid;
+    gap: 50px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 50px;
     align-items: center;
-    max-width: 1100px;
+    margin: 0 auto;
+    max-width: 100%;
   }
 }
 
 .about__link {
   color: #8b6914;
+  font-weight: bold;
 }
 
 .about__link:active,
@@ -365,7 +380,6 @@ a {
   background-position: center;
   background-size: cover;
   height: 150px;
-  background-attachment: fixed;
 }
 @media screen and (min-width: 540px) {
   .hero {
@@ -383,8 +397,9 @@ a {
   color: #080808;
   margin: 0;
   text-transform: lowercase;
-  text-align: center;
+  text-align: left;
   padding-top: 91px;
+  padding-left: 30px;
 }
 @media screen and (min-width: 540px) {
   .hero__headline1 {
@@ -400,23 +415,23 @@ a {
 }
 
 .sales__grid,
-.services {
+.services__grid {
   display: grid;
   grid-template-rows: 3fr;
   gap: 20px;
 }
 @media screen and (min-width: 540px) {
   .sales__grid,
-.services {
+.services__grid {
     width: 80%;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 960px) {
   .sales__grid,
-.services {
+.services__grid {
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
   }
 }
@@ -440,36 +455,17 @@ a {
 .sales__text,
 .services__text {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
   text-align: center;
   padding: 10px;
 }
 
 .services__more {
   display: none;
-  grid-column: 1/-1;
-}
-
-@media screen and (min-width: 540px) {
-  .services__more-grid {
-    display: grid;
-    grid-template-columns: 70px 1fr;
-    grid-template-rows: 1fr;
-    align-items: center;
-    gap: 50px;
-    margin: 0 auto;
-    max-width: 600px;
-  }
 }
 
 .services__icon {
-  display: none;
-}
-@media screen and (min-width: 540px) {
-  .services__icon {
-    width: 60px;
-    display: block;
-  }
+  width: 50px;
 }
 
 .sales__headline1 {
@@ -565,7 +561,7 @@ a {
   width: 100%;
   padding: 5px;
   font-family: "Rajdhani", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   outline: none;
 }
 
@@ -579,7 +575,7 @@ a {
   padding: 10px;
   margin-top: 15px;
   font-family: "Rajdhani", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   border: none;
   background-color: #deb887;
   font-weight: bold;

@@ -8,7 +8,6 @@
   background-position: center;
   background-size: cover;
   height: 150px;
-  background-attachment: fixed;
 
   @media screen and (min-width: 540px) {
     height: 200px;
@@ -24,8 +23,9 @@
   color: colors.$color-black;
   margin: 0;
   text-transform: lowercase;
-  text-align: center;
+  text-align: left;
   padding-top: 91px;
+  padding-left: 30px;
 
   @media screen and (min-width: 540px) {
     font-size: 80px;
@@ -40,7 +40,7 @@
 
 //Section services, sales
 .sales__grid,
-.services {
+.services__grid {
   display: grid;
   grid-template-rows: 3fr;
   gap: 20px;
@@ -52,7 +52,7 @@
 
   @media screen and (min-width: 960px) {
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
   }
 }
@@ -76,39 +76,15 @@
 .sales__text,
 .services__text {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
   text-align: center;
   padding: 10px;
 }
 
 .services__more {
   display: none;
-  grid-column: 1 / -1;
-}
-
-.services__more-grid {
-  @media screen and (min-width: 540px) {
-    display: grid;
-    grid-template-columns: 70px 1fr;
-    grid-template-rows: 1fr;
-    align-items: center;
-    gap: 50px;
-    margin: 0 auto;
-    max-width: 600px;
-  }
 }
 
 .services__icon {
-  display: none;
-
-  @media screen and (min-width: 540px) {
-    width: 60px;
-
-    display: block;
-  }
-}
-
-//Délka řádků, šířka odstavců
-.services2 p {
-  //max-width: 500px;
+  width: 50px;
 }

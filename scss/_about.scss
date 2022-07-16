@@ -3,13 +3,16 @@
 
 //Sekce about
 .about {
-  text-align: justify;
+  text-align: center;
 }
 
-//Image
-.about__image {
-  border-radius: 0 30px 30px 30px;
-  margin: base.$spacer 0;
+//Obsah
+.about__content {
+  padding: base.$spacer;
+
+  @media screen and (min-width: 1175px) {
+    padding: 0 base.$spacer;
+  }
 }
 
 //Icons
@@ -17,19 +20,23 @@
   width: 40px;
 }
 
-//Flexbox icons
-.about__flexbox-icon {
+//Flexbox icons abount and services
+.about__flexbox-icon,
+.services__flexbox-icon {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  max-width: 250px;
+  margin: 0 auto;
 
   @media screen and (min-width: 540px) {
     flex-direction: column;
     justify-content: center;
+    max-width: 100%;
   }
 }
 
-.about__icon-text {
+.about__icon-text,
+.services__icon-text {
   margin-left: 15px;
   font-weight: bold;
   text-align: center;
@@ -39,8 +46,9 @@
   }
 }
 
-//Main flexbox icons
-.about__flexbox-main-icon {
+//Main flexbox icons and services
+.about__flexbox-main-icon,
+.services__flexbox {
   @media screen and (min-width: 540px) {
     display: flex;
     justify-content: space-evenly;
@@ -63,16 +71,18 @@
 
   @media screen and (min-width: 960px) {
     display: grid;
+    gap: 50px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 50px;
     align-items: center;
-    max-width: 1100px;
+    margin: 0 auto;
+    max-width: 100%;
   }
 }
 
 .about__link {
   color: colors.$color-wood-light2;
+  font-weight: bold;
 }
 
 .about__link:active,

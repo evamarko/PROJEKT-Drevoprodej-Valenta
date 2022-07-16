@@ -26,15 +26,16 @@
 }
 
 .header__headline1 {
-  font-size: 50px;
+  font-size: 60px;
   margin: 0;
-  padding-top: 211px;
-  text-align: center;
+  padding-top: 192px;
+  text-align: right;
   line-height: 1;
 
   @media screen and (min-width: 540px) {
-    font-size: 80px;
-    padding-top: 257px;
+    font-size: 100px;
+    padding-top: 221px;
+    padding-right: 30px;
   }
 
   @media screen and (min-width: 960px) {
