@@ -442,6 +442,7 @@ a {
   cursor: pointer;
 }
 
+.active,
 .sales__div:active,
 .sales__div:hover,
 .sales__div:focus,
