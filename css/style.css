@@ -329,19 +329,27 @@ a {
 }
 
 @media screen and (min-width: 540px) {
-  .about__flexbox-main-icon,
-.services__flexbox {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 50px;
-    gap: 20px;
+  .about__grid-main-icon,
+.services__grid-icon {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 50px;
   }
 }
 @media screen and (min-width: 960px) {
-  .about__flexbox-main-icon,
-.services__flexbox {
-    justify-content: center;
-    gap: 100px;
+  .about__grid-main-icon,
+.services__grid-icon {
+    gap: 75px;
+  }
+}
+
+.services__grid-icon {
+  margin-top: 30px;
+}
+@media screen and (min-width: 540px) {
+  .services__grid-icon {
+    margin-top: 50px;
   }
 }
 
@@ -419,20 +427,22 @@ a {
   display: grid;
   grid-template-rows: 3fr;
   gap: 20px;
+  max-width: 300px;
+  margin: 0 auto;
 }
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 850px) {
   .sales__grid,
 .services__grid {
-    width: 80%;
-    margin: 0 auto;
+    max-width: 80%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media screen and (min-width: 960px) {
   .sales__grid,
 .services__grid {
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
