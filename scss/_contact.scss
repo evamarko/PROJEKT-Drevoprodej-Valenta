@@ -18,7 +18,7 @@
 //Provozní doba
 .contact__times {
   background-color: colors.$color-wood-light;
-  width: 180px;
+  max-width: 270px;
   padding: 20px;
   margin: 0 auto;
 
@@ -29,6 +29,10 @@
 
 .contact__times p {
   margin: 0;
+}
+
+.contact__times td {
+  padding-left: 20px;
 }
 
 //Formulář

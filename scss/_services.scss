@@ -38,6 +38,31 @@
   }
 }
 
+//Services grid
+.services__grid-icon {
+  @media screen and (min-width: 540px) {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    gap: 50px;
+  }
+
+  @media screen and (min-width: 690px) {
+    grid-template-columns: repeat(4, auto);
+  }
+  @media screen and (min-width: 960px) {
+    gap: 75px;
+  }
+}
+
+.services__grid-icon {
+  margin-top: 30px;
+
+  @media screen and (min-width: 540px) {
+    margin-top: 50px;
+  }
+}
+
 //Section services, sales
 .sales__grid,
 .services__grid {

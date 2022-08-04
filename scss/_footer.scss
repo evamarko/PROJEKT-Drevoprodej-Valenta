@@ -68,4 +68,17 @@
   margin: 0;
 }
 
-//Footer grid
+//Footer tabulka provozní doba
+.footer__table {
+  text-align: left;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.footer__table td {
+  padding-left: 20px;
+}
+
+.footer__table-headline {
+  margin-bottom: 0;
+}
