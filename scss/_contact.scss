@@ -36,6 +36,19 @@
 }
 
 //Formulář
+.contact__form-flex {
+  @media screen and (min-width: 960px) {
+    display: flex;
+    gap: 50px;
+  }
+}
+
+.contact__form-flex-item {
+  @media screen and (min-width: 960px) {
+    flex-grow: 1;
+  }
+}
+
 .contact__form {
   background-color: colors.$color-wood-light;
   padding: 20px;

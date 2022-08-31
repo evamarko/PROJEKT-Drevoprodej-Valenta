@@ -531,6 +531,23 @@ a {
   margin: 0 auto;
 }
 
+.sortiment__headline3 {
+  color: #8b6914;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.sortiment__contain-grid {
+  text-align: center;
+}
+@media screen and (min-width: 960px) {
+  .sortiment__contain-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+
 .contact__email {
   color: #8b6914;
   text-decoration: none;
@@ -560,6 +577,19 @@ a {
 
 .contact__times td {
   padding-left: 20px;
+}
+
+@media screen and (min-width: 960px) {
+  .contact__form-flex {
+    display: flex;
+    gap: 50px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .contact__form-flex-item {
+    flex-grow: 1;
+  }
 }
 
 .contact__form {

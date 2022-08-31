@@ -1,0 +1,18 @@
+@use "colors";
+@use "base";
+
+.sortiment__headline3 {
+  color: colors.$color-wood-light2;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.sortiment__contain-grid {
+  text-align: center;
+
+  @media screen and (min-width: 960px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}

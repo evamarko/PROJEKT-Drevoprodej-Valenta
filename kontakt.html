@@ -1,6 +1,6 @@
 ---
 layout: main-template-drevoprodej.njk
-title: Kontakt - Dřevoprodej Valenta Prušánky
+title: Kontakt | Dřevoprodej Valenta Prušánky
 ---
 
 <section class="contact">
@@ -54,29 +54,31 @@ title: Kontakt - Dřevoprodej Valenta Prušánky
   <div class="contact__form">
     <h2 class="contact__headline2">kontaktní formulář</h2>
     <form action="" method="post">
-      <div>
-        <label
-          class="contact__form-label contact__form-label-required"
-          for="email"
-          >e-mail</label
-        >
-        <input
-          class="contact__form-input"
-          type="email"
-          name="email"
-          id="email"
-          required
-        />
-      </div>
+      <div class="contact__form-flex">
+        <div class="contact__form-flex-item">
+          <label
+            class="contact__form-label contact__form-label-required"
+            for="email"
+            >e-mail</label
+          >
+          <input
+            class="contact__form-input"
+            type="email"
+            name="email"
+            id="email"
+            required
+          />
+        </div>
 
-      <div>
-        <label class="contact__form-label" for="telefon">telefon</label>
-        <input
-          class="contact__form-input"
-          type="tel"
-          name="telefon"
-          id="telefon"
-        />
+        <div class="contact__form-flex-item">
+          <label class="contact__form-label" for="telefon">telefon</label>
+          <input
+            class="contact__form-input"
+            type="tel"
+            name="telefon"
+            id="telefon"
+          />
+        </div>
       </div>
 
       <div>
