@@ -51,6 +51,7 @@
 .footer__email:focus,
 .footer__email:hover {
   color: colors.$color-wood-light2;
+  text-decoration: underline;
 }
 
 //Footer copyright
