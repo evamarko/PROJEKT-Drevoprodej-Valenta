@@ -541,15 +541,58 @@ hr {
   font-size: 30px;
 }
 
-.sortiment__contain-grid {
-  text-align: center;
-}
 @media screen and (min-width: 960px) {
   .sortiment__contain-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    gap: 30px;
   }
+}
+
+@media screen and (min-width: 700px) {
+  .sortiment__flex {
+    display: flex;
+  }
+}
+
+.sortiment__flex div {
+  flex-grow: 1;
+}
+
+.sortiment__img {
+  align-self: center;
+}
+
+.sortiment__margin-top {
+  margin-top: 134px;
+}
+
+@media screen and (min-width: 800px) {
+  .sortiment__products-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+.sortiment__link {
+  color: #8b6914;
+  font-weight: bold;
+}
+
+.sortiment__link:active,
+.sortiment__link:focus,
+.sortiment__link:hover {
+  text-decoration: underline;
+}
+
+.sortiment td {
+  width: 80px;
+}
+
+.sortiment ul {
+  padding: 0;
 }
 
 .contact__email {

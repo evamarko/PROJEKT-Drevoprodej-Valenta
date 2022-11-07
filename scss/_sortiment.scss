@@ -8,11 +8,57 @@
 }
 
 .sortiment__contain-grid {
-  text-align: center;
-
   @media screen and (min-width: 960px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    gap: 30px;
   }
+}
+
+.sortiment__flex {
+  @media screen and (min-width: 700px) {
+    display: flex;
+  }
+}
+
+.sortiment__flex div {
+  flex-grow: 1;
+}
+
+.sortiment__img {
+  align-self: center;
+}
+
+.sortiment__margin-top {
+  margin-top: 134px;
+}
+
+.sortiment__products-grid {
+  @media screen and (min-width: 800px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+
+.sortiment__link {
+  color: colors.$color-wood-light2;
+  font-weight: bold;
+}
+
+.sortiment__link:active,
+.sortiment__link:focus,
+.sortiment__link:hover {
+  text-decoration: underline;
+}
+
+//Tabulka
+.sortiment td {
+  width: 80px;
+}
+
+//Seznam
+.sortiment ul {
+  padding: 0;
 }
