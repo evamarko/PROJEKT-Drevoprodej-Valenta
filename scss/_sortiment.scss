@@ -31,7 +31,11 @@
 }
 
 .sortiment__margin-top {
-  margin-top: 134px;
+  margin-top: 60px;
+
+  @media screen and (min-width: 700px) {
+    margin-top: 134px;
+  }
 }
 
 .sortiment__products-grid {
@@ -54,8 +58,20 @@
 }
 
 //Tabulka
-.sortiment td {
-  width: 80px;
+.sortiment__table td {
+  width: 10%;
+  text-align: center;
+}
+
+.sortiment__table,
+.sortiment__table th,
+.sortiment__table td {
+  border: 2px solid white;
+  border-collapse: collapse;
+}
+.sortiment__table th,
+.sortiment__table td {
+  background-color: colors.$color-wood-light4;
 }
 
 //Seznam

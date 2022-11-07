@@ -565,7 +565,12 @@ hr {
 }
 
 .sortiment__margin-top {
-  margin-top: 134px;
+  margin-top: 60px;
+}
+@media screen and (min-width: 700px) {
+  .sortiment__margin-top {
+    margin-top: 134px;
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -587,8 +592,21 @@ hr {
   text-decoration: underline;
 }
 
-.sortiment td {
-  width: 80px;
+.sortiment__table td {
+  width: 10%;
+  text-align: center;
+}
+
+.sortiment__table,
+.sortiment__table th,
+.sortiment__table td {
+  border: 2px solid white;
+  border-collapse: collapse;
+}
+
+.sortiment__table th,
+.sortiment__table td {
+  background-color: #deb887;
 }
 
 .sortiment ul {
