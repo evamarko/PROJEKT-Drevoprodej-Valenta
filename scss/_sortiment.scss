@@ -16,16 +16,6 @@
   }
 }
 
-.sortiment__flex {
-  @media screen and (min-width: 700px) {
-    display: flex;
-  }
-}
-
-.sortiment__flex div {
-  flex-grow: 1;
-}
-
 .sortiment__img {
   align-self: center;
 }
@@ -41,7 +31,7 @@
 .sortiment__products-grid {
   @media screen and (min-width: 800px) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
   }
 }
