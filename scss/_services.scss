@@ -18,7 +18,7 @@
   }
 }
 
-.hero__headline1 {
+.hero__headline {
   font-size: 50px;
   color: colors.$color-black;
   margin: 0;
@@ -26,6 +26,7 @@
   text-align: left;
   padding-top: 91px;
   padding-left: 30px;
+  font-weight: bold;
 
   @media screen and (min-width: 540px) {
     font-size: 80px;

@@ -13,6 +13,7 @@
 .contact__email:focus,
 .contact__email:active {
   color: colors.$color-wood-light3;
+  text-decoration: underline;
 }
 
 //Provozní doba
