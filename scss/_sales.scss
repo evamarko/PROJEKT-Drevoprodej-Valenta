@@ -1,14 +1,24 @@
 @use "colors";
 @use "base";
 
-.sales__headline1 {
-  margin-bottom: 50px;
+.sales__headline1,
+.contact__headline1 {
+  padding-top: 150px;
+  background-image: url("/images/sortiment-background.jpg");
+  font-size: 40px;
+  color: colors.$color-black;
+  text-align: center;
+  margin: 0;
+
+  @media screen and (min-width: 540px) {
+    font-size: 50px;
+  }
+
+  @media screen and (min-width: 960px) {
+    font-size: 60px;
+  }
 }
 
 a {
   color: colors.$color-black;
-}
-
-hr {
-  max-width: 300px;
 }

@@ -61,10 +61,8 @@ a {
 }
 
 .about__headline1,
-.sales__headline1,
 .production__headline1,
-.services2__headline1,
-.contact__headline1 {
+.services2__headline1 {
   font-size: 40px;
   color: #8b6914;
   text-align: center;
@@ -72,19 +70,15 @@ a {
 }
 @media screen and (min-width: 540px) {
   .about__headline1,
-.sales__headline1,
 .production__headline1,
-.services2__headline1,
-.contact__headline1 {
+.services2__headline1 {
     font-size: 50px;
   }
 }
 @media screen and (min-width: 960px) {
   .about__headline1,
-.sales__headline1,
 .production__headline1,
-.services2__headline1,
-.contact__headline1 {
+.services2__headline1 {
     font-size: 60px;
   }
 }
@@ -377,39 +371,39 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 150px;
+  height: 100px;
 }
 @media screen and (min-width: 540px) {
   .hero {
-    height: 200px;
+    height: 150px;
   }
 }
 @media screen and (min-width: 960px) {
   .hero {
-    height: 250px;
+    height: 200px;
   }
 }
 
 .hero__headline {
-  font-size: 50px;
+  font-size: 40px;
   color: #080808;
   margin: 0;
   text-transform: lowercase;
   text-align: left;
-  padding-top: 91px;
+  padding-top: 53px;
   padding-left: 30px;
   font-weight: bold;
 }
 @media screen and (min-width: 540px) {
   .hero__headline {
-    font-size: 80px;
-    padding-top: 105px;
+    font-size: 60px;
+    padding-top: 78px;
   }
 }
 @media screen and (min-width: 960px) {
   .hero__headline {
-    font-size: 120px;
-    padding-top: 107px;
+    font-size: 80px;
+    padding-top: 104px;
   }
 }
 
@@ -498,16 +492,30 @@ a {
   width: 50px;
 }
 
-.sales__headline1 {
-  margin-bottom: 50px;
+.sales__headline1,
+.contact__headline1 {
+  padding-top: 150px;
+  background-image: url("/images/sortiment-background.jpg");
+  font-size: 40px;
+  color: #080808;
+  text-align: center;
+  margin: 0;
+}
+@media screen and (min-width: 540px) {
+  .sales__headline1,
+.contact__headline1 {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .sales__headline1,
+.contact__headline1 {
+    font-size: 60px;
+  }
 }
 
 a {
   color: #080808;
-}
-
-hr {
-  max-width: 300px;
 }
 
 .production,
@@ -757,12 +765,6 @@ hr {
 @media screen and (min-width: 960px) {
   .contact__flexbox-item2 {
     flex-basis: 60%;
-  }
-}
-
-@media screen and (min-width: 960px) {
-  .contact__headline1 {
-    text-align: left;
   }
 }
 
