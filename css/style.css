@@ -551,6 +551,11 @@ a {
   font-size: 30px;
 }
 
+.sortiment {
+  padding: 50px;
+  padding-top: 150px;
+}
+
 @media screen and (min-width: 960px) {
   .sortiment__contain-grid {
     display: grid;
@@ -827,7 +832,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 @media screen and (min-width: 540px) {
   .footer__copyright {
