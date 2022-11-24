@@ -129,7 +129,7 @@
   width: 100%;
   margin-top: base.$spacer;
 
-  @media screen and (min-width: 540px) {
+  @media screen and (min-width: 960px) {
     height: 100%;
     margin-top: 0;
   }
@@ -137,16 +137,9 @@
 
 //Flexbox kontakt
 .contact__flexbox {
-  @media screen and (min-width: 540px) {
+  @media screen and (min-width: 960px) {
     display: flex;
     margin-top: base.$spacer;
-  }
-}
-
-.contact__flexbox-item1,
-.contact__flexbox-item2 {
-  @media screen and (min-width: 540px) {
-    flex-basis: 50%;
   }
 }
 

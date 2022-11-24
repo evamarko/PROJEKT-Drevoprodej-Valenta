@@ -16,6 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="text/javascript"
+      src="https://www.cookie-lista.cz/BeeCookie/jquery-3.3.1.min.js"
+    ></script>
     <script src="/js/app.js"></script>
   </head>
   <body>
@@ -142,5 +146,37 @@
         <p>©2022 | Dřevoprodej Valenta</p>
       </div>
     </footer>
+    <!-- COOKIE LIŠTA START -->
+    <script
+      type="text/javascript"
+      src="https://www.cookie-lista.cz/BeeCookie/BeeCookie.js"
+    ></script>
+    <script type="text/javascript">
+      $(function () {
+        var options = {
+          theme: "white",
+          position: "bottom",
+          distance: 20,
+          borderRadius: 4,
+          background: "#ffffff",
+          backgroundOpacity: "0.9",
+          fontSize: 14,
+          text: "Tyto webové stránky používají k poskytování svých služeb soubory Cookies. Používáním těchto webových stránek souhlasíte s použitím souborů Cookies.",
+          html: false,
+          textColor: "#333333",
+          showButton: true,
+          buttonText: "SOUHLASÍM!",
+          buttonColor: "#ffffff",
+          buttonBgColor: "#8b6914",
+          moreButtonText: "Více informací o Cookies",
+          moreButtonColor: "#8b6914",
+          moreButtonLink: "https://www.cookie-lista.cz/co-je-cookies.html",
+          showCloseButton: false,
+          cookieDays: 365,
+        };
+        $("body").BeeCookie(options);
+      });
+    </script>
+    <!-- COOKIE LIŠTA KONEC -->
   </body>
 </html>

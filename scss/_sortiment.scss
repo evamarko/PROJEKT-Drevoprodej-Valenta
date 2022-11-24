@@ -8,8 +8,12 @@
 }
 
 .sortiment {
-  padding: 50px;
-  padding-top: 150px;
+  padding: 150px 30px 100px 30px;
+
+  @media screen and (min-width: 960px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 .sortiment__contain-grid {
@@ -57,6 +61,7 @@
 .sortiment__table td {
   width: 10%;
   text-align: center;
+  font-weight: bold;
 }
 
 .sortiment__table,
@@ -73,4 +78,14 @@
 //Seznam
 .sortiment ul {
   padding: 0;
+  max-width: 500px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 960px) {
+    margin: 0;
+  }
+}
+
+.sortiment li {
+  text-align: left;
 }
