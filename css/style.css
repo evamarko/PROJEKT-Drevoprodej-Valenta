@@ -824,6 +824,10 @@ a {
   padding: 15px;
   margin: 0;
   background-color: #fff8dc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 @media screen and (min-width: 540px) {
   .footer__copyright {
@@ -847,4 +851,8 @@ a {
 
 .footer__table-headline {
   margin-bottom: 0;
+}
+
+.footer__icon {
+  width: 30px;
 }/*# sourceMappingURL=style.css.map */
