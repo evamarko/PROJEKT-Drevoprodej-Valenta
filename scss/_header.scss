@@ -14,7 +14,6 @@
   background-position: center;
   background-size: cover;
   height: 300px;
-  //background-attachment: fixed;
 
   @media screen and (min-width: 540px) {
     height: 400px;
@@ -79,7 +78,6 @@
 
   @media screen and (min-width: 960px) {
     font-size: 24px;
-    padding-left: 30px;
   }
 }
 
@@ -87,4 +85,24 @@
 .header__contact--email:focus,
 .header__contact--email:hover {
   text-decoration: underline;
+}
+
+//Ikony
+.header__icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 8px;
+
+  @media screen and (min-width: 960px) {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+  }
+}
+
+//Ikony flex
+.header__flex {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
