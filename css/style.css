@@ -864,4 +864,28 @@ a {
 
 .footer__icon {
   width: 30px;
+}
+
+.footer__icon.mail {
+  margin-right: 5px;
+  width: 25px;
+}
+
+.footer__icon.hours {
+  margin-right: 5px;
+  width: 23px;
+}
+
+.footer__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer__item {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
