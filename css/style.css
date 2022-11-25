@@ -795,6 +795,34 @@ a {
   }
 }
 
+.contact__icon {
+  width: 30px;
+}
+
+.contact__icon.mail {
+  margin-right: 5px;
+  width: 25px;
+}
+
+.contact__icon.hours {
+  margin-right: 5px;
+  width: 23px;
+}
+
+.contact__flex {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.contact p {
+  margin: 0;
+}
+
+.contact__item {
+  margin-bottom: 30px;
+}
+
 .footer {
   background-color: #cdaa7d;
   margin: 0;
