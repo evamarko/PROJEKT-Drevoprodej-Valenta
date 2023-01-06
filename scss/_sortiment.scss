@@ -1,6 +1,10 @@
 @use "colors";
 @use "base";
 
+.sortiment__headline2 {
+  text-align: left;
+}
+
 .sortiment__headline3 {
   color: colors.$color-wood-light2;
   margin-top: 50px;
@@ -79,7 +83,7 @@
 .sortiment ul {
   padding: 0;
   max-width: 500px;
-  margin: 0 auto;
+  margin: 0;
 
   @media screen and (min-width: 960px) {
     margin: 0;

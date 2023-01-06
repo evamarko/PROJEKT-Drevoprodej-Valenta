@@ -557,6 +557,10 @@ a {
   margin: 0 auto;
 }
 
+.sortiment__headline2 {
+  text-align: left;
+}
+
 .sortiment__headline3 {
   color: #8b6914;
   margin-top: 50px;
@@ -636,7 +640,7 @@ a {
 .sortiment ul {
   padding: 0;
   max-width: 500px;
-  margin: 0 auto;
+  margin: 0;
 }
 @media screen and (min-width: 960px) {
   .sortiment ul {
