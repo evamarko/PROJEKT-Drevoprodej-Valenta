@@ -47,11 +47,11 @@
 }
 
 //Menu items
-.menu__item {
-  @media screen and (min-width: 540px) {
-    flex-basis: auto;
-  }
-}
+//.menu__item {
+// @media screen and (min-width: 540px) {
+//    flex-basis: auto;
+//  }
+//}
 
 //Menu links
 .menu__link {
@@ -76,4 +76,36 @@
 
 .menu__link--active {
   color: colors.$color-wood-light2;
+}
+
+//Dropdown menu
+
+.menu__dropdown {
+  display: none;
+
+  @media screen and (min-width: 540px) {
+    list-style-type: none;
+    position: fixed;
+    top: 80px;
+    right: 52px;
+    padding: 0;
+    margin: 0;
+    background-color: colors.$color-wood-light;
+    font-weight: bold;
+  }
+}
+
+.drop-menu-item {
+  @media screen and (min-width: 540px) {
+    padding: 2px 15px;
+    cursor: pointer;
+  }
+}
+
+.drop-menu-link:hover,
+.drop-menu-link:focus,
+.drop-menu-link:hover {
+  @media screen and (min-width: 540px) {
+    color: colors.$color-wood-light2;
+  }
 }

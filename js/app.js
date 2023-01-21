@@ -9,3 +9,21 @@ function coll() {
   }
   button.classList.toggle("active");
 }
+
+$(window).ready(function () {
+  var windowWidth = $(window).width();
+  if (windowWidth > 540) {
+    $(".menu__item--hover").mouseenter(function () {
+      $(".menu__dropdown").css("display", "block");
+    });
+    $(".menu__dropdown").mouseenter(function () {
+      $(".menu__dropdown").css("display", "block");
+    });
+    $(".menu__item--hover").mouseleave(function () {
+      $(".menu__dropdown").css("display", "none");
+    });
+    $(".menu__dropdown").mouseleave(function () {
+      $(".menu__dropdown").css("display", "none");
+    });
+  }
+});

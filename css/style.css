@@ -263,12 +263,6 @@ a {
   display: block;
 }
 
-@media screen and (min-width: 540px) {
-  .menu__item {
-    flex-basis: auto;
-  }
-}
-
 .menu__link {
   display: block;
   padding: 15px;
@@ -292,6 +286,37 @@ a {
 
 .menu__link--active {
   color: #8b6914;
+}
+
+.menu__dropdown {
+  display: none;
+}
+@media screen and (min-width: 540px) {
+  .menu__dropdown {
+    list-style-type: none;
+    position: fixed;
+    top: 80px;
+    right: 52px;
+    padding: 0;
+    margin: 0;
+    background-color: #fff8dc;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .drop-menu-item {
+    padding: 2px 15px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .drop-menu-link:hover,
+.drop-menu-link:focus,
+.drop-menu-link:hover {
+    color: #8b6914;
+  }
 }
 
 .about {
@@ -650,6 +675,30 @@ a {
 
 .sortiment li {
   text-align: left;
+}
+
+.sortiment__doors--download {
+  width: 100%;
+  background-color: #8b6914;
+  cursor: pointer;
+  color: #fafafa;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+@media screen and (min-width: 640px) {
+  .sortiment__doors--download {
+    width: 70%;
+    margin: 170px auto 0 auto;
+  }
+}
+
+.sortiment__doors--download:hover,
+.sortiment__doors--download:focus,
+.sortiment__doors--download:active {
+  filter: brightness(115%);
 }
 
 .contact__email {

@@ -9,7 +9,7 @@
       name="description"
       content="Nabízíme překližky, palubky, podlahy, terasy, OSB desky aj. Doplňkové služby doprava, krácení, hoblování a formátování."
     />
-    <!--<meta name="robots" content="index, follow" />-->
+    <meta name="robots" content="index, follow" />
     <title>{{ title }}</title>
 
     <link rel="stylesheet" href="/css/style.css" />
@@ -19,18 +19,17 @@
       href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <!--<link rel="canonical" href="https://www.drevoprodejvalenta.cz{{ link }}" />
+    <link rel="canonical" href="https://www.drevoprodejvalenta.cz{{ link }}" />
     <link
-    rel="alternate"
-    hreflang="cs-cs"
-    href="https://www.drevoprodejvalenta.cz{{ link }}"
-  />-->
+      rel="alternate"
+      hreflang="cs-cs"
+      href="https://www.drevoprodejvalenta.cz{{ link }}"
+    />
 
     <script
       type="text/javascript"
       src="https://www.cookie-lista.cz/BeeCookie/jquery-3.3.1.min.js"
     ></script>
-    <script src="/js/app.js"></script>
   </head>
   <body>
     <header class="header">
@@ -65,7 +64,8 @@
               >O nás</a
             >
           </li>
-          <li class="menu__item">
+
+          <li class="menu__item menu__item--hover">
             <a
               class="menu__link {{ 'menu__link--active' if page.fileSlug === 'drevoprodej' }}"
               href="/drevoprodej/"
@@ -99,6 +99,63 @@
           </li>
         </ul>
       </nav>
+      <ul class="menu__dropdown">
+        <li class="drop-menu-item">
+          <a class="drop-menu-link" href="/drevoprodej/preklizky">překližky</a>
+        </li>
+        <li class="drop-menu-item">
+          <a class="drop-menu-link" href="/drevoprodej/palubky-podlahy"
+            >palubky, podlahy</a
+          >
+        </li>
+        <li class="drop-menu-item">
+          <a class="drop-menu-link" href="/drevoprodej/terasy">terasy</a>
+        </li>
+        <li class="drop-menu-item">
+          <a class="drop-menu-link" href="/drevoprodej/osb-desky">OSB desky</a>
+        </li>
+        <li class="drop-menu-item">
+          <a class="drop-menu-link" href="/drevoprodej/durelis-desky"
+            >durelis desky</a
+          >
+        </li>
+        <li class="drop-menu-item">
+          <a class="drop-menu-link" href="/drevoprodej/sololit">sololit</a>
+        </li>
+        <li class="drop-menu-item">
+          <a class="drop-menu-link" href="/drevoprodej/stavebni-rezivo"
+            >stavební řezivo</a
+          >
+        </li>
+        <li class="drop-menu-item">
+          <a class="drop-menu-link" href="/drevoprodej/lazury-adler">lazury</a>
+        </li>
+        <li class="drop-menu-item">
+          <a class="drop-menu-link" href="/drevoprodej/truhlarske-rezivo"
+            >truhlářské řezivo</a
+          >
+        </li>
+        <li class="drop-menu-item">
+          <a class="drop-menu-link" href="/drevoprodej/hoblovana-prkna"
+            >hoblovaná prkna</a
+          >
+        </li>
+        <li class="drop-menu-item">
+          <a class="drop-menu-link" href="/drevoprodej/kvh-hranoly"
+            >KVH hranoly</a
+          >
+        </li>
+        <li class="drop-menu-item">
+          <a class="drop-menu-link" href="/drevoprodej/eurohranoly"
+            >eurohranoly</a
+          >
+        </li>
+        <li class="drop-menu-item">
+          <a class="drop-menu-link" href="/drevoprodej/interierove-dvere"
+            >interiérové dveře</a
+          >
+        </li>
+      </ul>
     </header>
     <main>
       {{ content | safe }}
@@ -231,6 +288,9 @@
       });
     </script>
     <script src="https://unpkg.com/@botpoison/browser" async></script>
+
     <!-- COOKIE LIŠTA KONEC -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/app.js"></script>
   </body>
 </html>

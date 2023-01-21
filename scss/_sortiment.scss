@@ -93,3 +93,27 @@
 .sortiment li {
   text-align: left;
 }
+
+//Interiérové dveře akční katalog
+.sortiment__doors--download {
+  width: 100%;
+  background-color: colors.$color-wood-light2;
+  cursor: pointer;
+  color: colors.$color-white;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 30px;
+
+  @media screen and (min-width: 640px) {
+    width: 70%;
+    margin: 170px auto 0 auto;
+  }
+}
+
+.sortiment__doors--download:hover,
+.sortiment__doors--download:focus,
+.sortiment__doors--download:active {
+  filter: brightness(115%);
+}
