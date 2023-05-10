@@ -1,7 +1,7 @@
 @use "colors";
 @use "base";
 
-//Hero and headline service
+//Hero and headline service on main webpage
 .hero {
   background-image: url("../images/wood2.jpg");
   background-repeat: no-repeat;
@@ -43,16 +43,16 @@
 .services__grid-icon {
   @media screen and (min-width: 540px) {
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    //justify-content: center;
     gap: 50px;
+    justify-items: end;
   }
 
-  @media screen and (min-width: 690px) {
-    grid-template-columns: repeat(4, auto);
-  }
   @media screen and (min-width: 960px) {
     gap: 75px;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between;
   }
 }
 
@@ -116,4 +116,31 @@
 
 .services__icon {
   width: 50px;
+}
+
+//Website services
+.services2__headline1 {
+  padding-top: 150px;
+  background-image: url("/images/sortiment-background.jpg");
+  font-size: 40px;
+  color: colors.$color-black;
+  text-align: center;
+  margin: 0;
+
+  @media screen and (min-width: 540px) {
+    font-size: 50px;
+  }
+
+  @media screen and (min-width: 960px) {
+    font-size: 60px;
+  }
+}
+
+.services__more-grid {
+  margin-top: 100px;
+}
+
+.services__headline3 {
+  color: colors.$color-wood-light2;
+  margin-bottom: 0;
 }

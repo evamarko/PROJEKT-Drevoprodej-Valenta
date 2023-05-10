@@ -36,23 +36,23 @@ a {
 }
 @media screen and (min-width: 540px) {
   .about,
-.services,
-.sales,
-.sortiment,
-.production,
-.services2,
-.contact {
+  .services,
+  .sales,
+  .sortiment,
+  .production,
+  .services2,
+  .contact {
     padding: 80px;
   }
 }
 @media screen and (min-width: 960px) {
   .about,
-.services,
-.sales,
-.sortiment,
-.production,
-.services2,
-.contact {
+  .services,
+  .sales,
+  .sortiment,
+  .production,
+  .services2,
+  .contact {
     padding: 100px;
     max-width: 1200px;
     margin: 0 auto;
@@ -69,15 +69,15 @@ a {
 }
 @media screen and (min-width: 540px) {
   .about__headline1,
-.production__headline1,
-.services2__headline1 {
+  .production__headline1,
+  .services2__headline1 {
     font-size: 50px;
   }
 }
 @media screen and (min-width: 960px) {
   .about__headline1,
-.production__headline1,
-.services2__headline1 {
+  .production__headline1,
+  .services2__headline1 {
     font-size: 60px;
   }
 }
@@ -91,15 +91,15 @@ a {
 }
 @media screen and (min-width: 540px) {
   .about__headline2,
-.sortiment__headline2,
-.contact__headline2 {
+  .sortiment__headline2,
+  .contact__headline2 {
     font-size: 40px;
   }
 }
 @media screen and (min-width: 960px) {
   .about__headline2,
-.sortiment__headline2,
-.contact__headline2 {
+  .sortiment__headline2,
+  .contact__headline2 {
     font-size: 50px;
   }
 }
@@ -180,13 +180,13 @@ a {
 }
 @media screen and (min-width: 540px) {
   .header__contact--phone,
-.header__contact--email {
+  .header__contact--email {
     font-size: 22px;
   }
 }
 @media screen and (min-width: 960px) {
   .header__contact--phone,
-.header__contact--email {
+  .header__contact--email {
     font-size: 24px;
   }
 }
@@ -296,7 +296,7 @@ a {
     list-style-type: none;
     position: fixed;
     top: 80px;
-    right: 52px;
+    right: 135px;
     padding: 0;
     margin: 0;
     background-color: #fff8dc;
@@ -313,8 +313,8 @@ a {
 
 @media screen and (min-width: 540px) {
   .drop-menu-link:hover,
-.drop-menu-link:focus,
-.drop-menu-link:hover {
+  .drop-menu-link:focus,
+  .drop-menu-link:hover {
     color: #8b6914;
   }
 }
@@ -340,18 +340,16 @@ a {
 .services__flexbox-icon {
   display: flex;
   align-items: center;
-  max-width: 250px;
+  justify-self: start;
   margin: 0 auto;
+  gap: 20px;
 }
 @media screen and (min-width: 540px) {
   .about__flexbox-icon,
-.services__flexbox-icon {
-    flex-direction: column;
+  .services__flexbox-icon {
     justify-content: center;
-    max-width: 100%;
   }
 }
-
 .about__icon-text,
 .services__icon-text {
   margin-left: 15px;
@@ -360,7 +358,7 @@ a {
 }
 @media screen and (min-width: 540px) {
   .about__icon-text,
-.services__icon-text {
+  .services__icon-text {
     margin-left: 0;
   }
 }
@@ -452,19 +450,16 @@ a {
 @media screen and (min-width: 540px) {
   .services__grid-icon {
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
     gap: 50px;
-  }
-}
-@media screen and (min-width: 690px) {
-  .services__grid-icon {
-    grid-template-columns: repeat(4, auto);
+    justify-items: end;
   }
 }
 @media screen and (min-width: 960px) {
   .services__grid-icon {
     gap: 75px;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between;
   }
 }
 
@@ -487,7 +482,7 @@ a {
 }
 @media screen and (min-width: 850px) {
   .sales__grid,
-.services__grid {
+  .services__grid {
     max-width: 80%;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
@@ -495,7 +490,7 @@ a {
 }
 @media screen and (min-width: 960px) {
   .sales__grid,
-.services__grid {
+  .services__grid {
     max-width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -534,6 +529,34 @@ a {
   width: 50px;
 }
 
+.services2__headline1 {
+  padding-top: 150px;
+  background-image: url("/images/sortiment-background.jpg");
+  font-size: 40px;
+  color: #080808;
+  text-align: center;
+  margin: 0;
+}
+@media screen and (min-width: 540px) {
+  .services2__headline1 {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .services2__headline1 {
+    font-size: 60px;
+  }
+}
+
+.services__more-grid {
+  margin-top: 100px;
+}
+
+.services__headline3 {
+  color: #8b6914;
+  margin-bottom: 0;
+}
+
 .sales__headline1,
 .contact__headline1 {
   padding-top: 150px;
@@ -545,13 +568,13 @@ a {
 }
 @media screen and (min-width: 540px) {
   .sales__headline1,
-.contact__headline1 {
+  .contact__headline1 {
     font-size: 50px;
   }
 }
 @media screen and (min-width: 960px) {
   .sales__headline1,
-.contact__headline1 {
+  .contact__headline1 {
     font-size: 60px;
   }
 }
@@ -562,7 +585,7 @@ a {
 
 @media screen and (min-width: 540px) {
   .production__grid,
-.sortiment__grid {
+  .sortiment__grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -571,7 +594,7 @@ a {
 }
 @media screen and (min-width: 960px) {
   .production__grid,
-.sortiment__grid {
+  .sortiment__grid {
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 100px;
   }

@@ -25,13 +25,16 @@
 .services__flexbox-icon {
   display: flex;
   align-items: center;
-  max-width: 250px;
+
+  justify-self: start;
   margin: 0 auto;
+  gap: 20px;
 
   @media screen and (min-width: 540px) {
-    flex-direction: column;
     justify-content: center;
-    max-width: 100%;
+  }
+
+  @media screen and (min-width: 850px) {
   }
 }
 
