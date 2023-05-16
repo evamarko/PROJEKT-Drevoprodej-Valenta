@@ -25,17 +25,7 @@
 .services__flexbox-icon {
   display: flex;
   align-items: center;
-
-  justify-self: start;
-  margin: 0 auto;
   gap: 20px;
-
-  @media screen and (min-width: 540px) {
-    justify-content: center;
-  }
-
-  @media screen and (min-width: 850px) {
-  }
 }
 
 .about__icon-text,

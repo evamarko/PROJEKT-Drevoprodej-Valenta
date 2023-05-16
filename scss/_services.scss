@@ -44,9 +44,8 @@
   @media screen and (min-width: 540px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    //justify-content: center;
     gap: 50px;
-    justify-items: end;
+    justify-items: start;
   }
 
   @media screen and (min-width: 960px) {

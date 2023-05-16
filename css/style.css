@@ -340,16 +340,9 @@ a {
 .services__flexbox-icon {
   display: flex;
   align-items: center;
-  justify-self: start;
-  margin: 0 auto;
   gap: 20px;
 }
-@media screen and (min-width: 540px) {
-  .about__flexbox-icon,
-  .services__flexbox-icon {
-    justify-content: center;
-  }
-}
+
 .about__icon-text,
 .services__icon-text {
   margin-left: 15px;
@@ -452,7 +445,7 @@ a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
-    justify-items: end;
+    justify-items: start;
   }
 }
 @media screen and (min-width: 960px) {
