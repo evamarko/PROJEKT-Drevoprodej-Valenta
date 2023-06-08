@@ -117,3 +117,96 @@
 .sortiment__doors--download:active {
   filter: brightness(115%);
 }
+
+//Obrázky na pozadí buttonů na podstránce dřevoprodej
+.sales__div.kvh,
+.sales__div.bsh,
+.sales__div.preklizka,
+.sales__div.palubka,
+.sales__div.terasa,
+.sales__div.osb,
+.sales__div.stavebnir,
+.sales__div.prkna,
+.sales__div.rezivot,
+.sales__div.lazury,
+.sales__div.doors,
+.sales__div.hranol,
+.sales__div.durelis,
+.sales__div.sololit {
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.5s;
+  padding: 10px 50px;
+
+  &:hover {
+    transform: translateY(-100%);
+    transform: scale(1.1);
+  }
+}
+
+.sales__link {
+  overflow: hidden;
+}
+
+.sales__div.kvh {
+  background-image: url("../images/sortiment/kvh.jpg");
+}
+
+.sales__div.bsh {
+  background-image: url("../images/sortiment/bsh.jpg");
+}
+
+.sales__div.preklizka {
+  background-image: url("../images/sortiment/preklizka.jpg");
+}
+
+.sales__div.palubka {
+  background-image: url("../images/sortiment/palubka.jpg");
+}
+
+.sales__div.terasa {
+  background-image: url("../images/sortiment/terasa.jpg");
+}
+
+.sales__div.osb {
+  background-image: url("../images/sortiment/osb.jpg");
+}
+
+.sales__div.stavebnir {
+  background-image: url("../images/sortiment/stavebni-rezivo.jpg");
+}
+
+.sales__div.prkna {
+  background-image: url("../images/sortiment/prkna.jpg");
+}
+
+.sales__div.rezivot {
+  background-image: url("../images/sortiment/rezivot.jpg");
+}
+
+.sales__div.lazury {
+  background-image: url("../images/sortiment/lazury.jpg");
+}
+
+.sales__div.doors {
+  background-image: url("../images/sortiment/doors.jpg");
+}
+
+.sales__div.hranol {
+  background-image: url("../images/sortiment/hranol.jpg");
+}
+
+.sales__div.durelis {
+  background-image: url("../images/sortiment/durelis.jpg");
+}
+
+.sales__div.sololit {
+  background-image: url("../images/sortiment/sololit.jpg");
+}
+
+.sales__text--background {
+  position: relative;
+  background: rgba(204, 204, 204, 0.5);
+}

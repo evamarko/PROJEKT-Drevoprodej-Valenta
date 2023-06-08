@@ -496,9 +496,6 @@ a {
 }
 
 .active,
-.sales__div:active,
-.sales__div:hover,
-.sales__div:focus,
 .services__div:active,
 .services__div:hover,
 .services__div:focus {
@@ -512,6 +509,11 @@ a {
   font-size: 22px;
   text-align: center;
   padding: 10px;
+}
+
+.sales__text {
+  background: rgba(250, 250, 250, 0.6);
+  padding: 5px 0;
 }
 
 .services__more {
@@ -715,6 +717,110 @@ a {
 .sortiment__doors--download:focus,
 .sortiment__doors--download:active {
   filter: brightness(115%);
+}
+
+.sales__div.kvh,
+.sales__div.bsh,
+.sales__div.preklizka,
+.sales__div.palubka,
+.sales__div.terasa,
+.sales__div.osb,
+.sales__div.stavebnir,
+.sales__div.prkna,
+.sales__div.rezivot,
+.sales__div.lazury,
+.sales__div.doors,
+.sales__div.hranol,
+.sales__div.durelis,
+.sales__div.sololit {
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform 0.5s;
+  padding: 10px 50px;
+}
+.sales__div.kvh:hover,
+.sales__div.bsh:hover,
+.sales__div.preklizka:hover,
+.sales__div.palubka:hover,
+.sales__div.terasa:hover,
+.sales__div.osb:hover,
+.sales__div.stavebnir:hover,
+.sales__div.prkna:hover,
+.sales__div.rezivot:hover,
+.sales__div.lazury:hover,
+.sales__div.doors:hover,
+.sales__div.hranol:hover,
+.sales__div.durelis:hover,
+.sales__div.sololit:hover {
+  transform: translateY(-100%);
+  transform: scale(1.1);
+}
+
+.sales__link {
+  overflow: hidden;
+}
+
+.sales__div.kvh {
+  background-image: url("../images/sortiment/kvh.jpg");
+}
+
+.sales__div.bsh {
+  background-image: url("../images/sortiment/bsh.jpg");
+}
+
+.sales__div.preklizka {
+  background-image: url("../images/sortiment/preklizka.jpg");
+}
+
+.sales__div.palubka {
+  background-image: url("../images/sortiment/palubka.jpg");
+}
+
+.sales__div.terasa {
+  background-image: url("../images/sortiment/terasa.jpg");
+}
+
+.sales__div.osb {
+  background-image: url("../images/sortiment/osb.jpg");
+}
+
+.sales__div.stavebnir {
+  background-image: url("../images/sortiment/stavebni-rezivo.jpg");
+}
+
+.sales__div.prkna {
+  background-image: url("../images/sortiment/prkna.jpg");
+}
+
+.sales__div.rezivot {
+  background-image: url("../images/sortiment/rezivot.jpg");
+}
+
+.sales__div.lazury {
+  background-image: url("../images/sortiment/lazury.jpg");
+}
+
+.sales__div.doors {
+  background-image: url("../images/sortiment/doors.jpg");
+}
+
+.sales__div.hranol {
+  background-image: url("../images/sortiment/hranol.jpg");
+}
+
+.sales__div.durelis {
+  background-image: url("../images/sortiment/durelis.jpg");
+}
+
+.sales__div.sololit {
+  background-image: url("../images/sortiment/sololit.jpg");
+}
+
+.sales__text--background {
+  position: relative;
+  background: rgba(204, 204, 204, 0.5);
 }
 
 .contact__email {

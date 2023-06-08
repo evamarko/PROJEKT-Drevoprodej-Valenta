@@ -91,9 +91,6 @@
 }
 
 .active,
-.sales__div:active,
-.sales__div:hover,
-.sales__div:focus,
 .services__div:active,
 .services__div:hover,
 .services__div:focus {
@@ -107,6 +104,11 @@
   font-size: 22px;
   text-align: center;
   padding: 10px;
+}
+
+.sales__text {
+  background: rgba(250, 250, 250, 0.6);
+  padding: 5px 0;
 }
 
 .services__more {
