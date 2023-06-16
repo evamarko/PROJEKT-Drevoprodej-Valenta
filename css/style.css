@@ -511,11 +511,6 @@ a {
   padding: 10px;
 }
 
-.sales__text {
-  background: rgba(250, 250, 250, 0.6);
-  padding: 5px 0;
-}
-
 .services__more {
   display: none;
 }
@@ -738,7 +733,6 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   transition: transform 0.5s;
-  padding: 10px 50px;
 }
 .sales__div.kvh:hover,
 .sales__div.bsh:hover,
@@ -818,9 +812,15 @@ a {
   background-image: url("../images/sortiment/sololit.jpg");
 }
 
-.sales__text--background {
-  position: relative;
-  background: rgba(204, 204, 204, 0.5);
+.sales__text {
+  font-size: 25px;
+  padding: 0;
+  text-shadow: white 5px 0 10px;
+}
+@media screen and (min-width: 850px) {
+  .sales__text {
+    font-size: 28px;
+  }
 }
 
 .contact__email {
