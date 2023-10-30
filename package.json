@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/evavalentova/PROJEKT-Drevoprodej.git"
+    "url": "git+https://github.com/evamarko/PROJEKT-Drevoprodej.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/evavalentova/PROJEKT-Drevoprodej/issues"
+    "url": "https://github.com/evamarko/PROJEKT-Drevoprodej/issues"
   },
-  "homepage": "https://github.com/evavalentova/PROJEKT-Drevoprodej#readme",
+  "homepage": "https://github.com/evamarko/PROJEKT-Drevoprodej#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1"
   }
