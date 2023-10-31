@@ -84,26 +84,27 @@
       </div>
 
       <nav class="menu">
-        <input type="checkbox" class="menu__checkbox" id="menu-checkbox" />
-        <label for="menu-checkbox" class="menu__toggler">☰</label>
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a
-              class="menu__link {{ 'menu__link--active' if page.fileSlug === '' }}"
-              href="/"
-              >O nás</a
-            >
-          </li>
+        <div>
+          <input type="checkbox" class="menu__checkbox" id="menu-checkbox" />
+          <label for="menu-checkbox" class="menu__toggler">☰</label>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a
+                class="menu__link {{ 'menu__link--active' if page.fileSlug === '' }}"
+                href="/"
+                >O nás</a
+              >
+            </li>
 
-          <li class="menu__item menu__item--hover">
-            <a
-              class="menu__link {{ 'menu__link--active' if page.fileSlug === 'drevoprodej' }}"
-              href="/drevoprodej/"
-              >Dřevoprodej</a
-            >
-          </li>
+            <li class="menu__item menu__item--hover">
+              <a
+                class="menu__link {{ 'menu__link--active' if page.fileSlug === 'drevoprodej' }}"
+                href="/drevoprodej/"
+                >Dřevoprodej</a
+              >
+            </li>
 
-          <!--
+            <!--
           <li class="menu__item">
             <a
               class="menu__link {{ 'menu__link--active' if page.fileSlug === 'drevovyroba' }}"
@@ -112,22 +113,28 @@
             >
           </li> -->
 
-          <li class="menu__item">
-            <a
-              class="menu__link {{ 'menu__link--active' if page.fileSlug === 'sluzby' }}"
-              href="/sluzby/"
-              >Služby</a
-            >
-          </li>
+            <li class="menu__item">
+              <a
+                class="menu__link {{ 'menu__link--active' if page.fileSlug === 'sluzby' }}"
+                href="/sluzby/"
+                >Služby</a
+              >
+            </li>
 
-          <li class="menu__item">
-            <a
-              class="menu__link {{ 'menu__link--active' if page.fileSlug === 'kontakt' }}"
-              href="/kontakt/"
-              >Kontakt</a
-            >
-          </li>
-        </ul>
+            <li class="menu__item">
+              <a
+                class="menu__link {{ 'menu__link--active' if page.fileSlug === 'kontakt' }}"
+                href="/kontakt/"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a href="/" class="menu__logo-link">
+            <img class="menu__logo" src="/images/logo.png" alt="" />
+          </a>
+        </div>
       </nav>
       <ul class="menu__dropdown">
         <li class="drop-menu-item">

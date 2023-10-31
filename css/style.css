@@ -217,15 +217,19 @@ a {
 }
 
 .menu {
-  overflow: hidden;
   background-color: #fff8dc;
   position: fixed;
   top: 72px;
+  height: auto;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 @media screen and (min-width: 540px) {
   .menu {
     top: 39.5px;
+    flex-direction: row-reverse;
   }
 }
 
@@ -316,6 +320,24 @@ a {
   .drop-menu-link:focus,
   .drop-menu-link:hover {
     color: #8b6914;
+  }
+}
+
+.menu__logo {
+  width: 60px;
+  position: absolute;
+  right: 0px;
+}
+@media screen and (min-width: 540px) {
+  .menu__logo {
+    left: 0px;
+    width: 80px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .menu__logo {
+    width: 130px;
+    filter: drop-shadow(0.5px 0.5px 0.5px white);
   }
 }
 
@@ -520,7 +542,7 @@ a {
 }
 
 .services2__headline1 {
-  padding-top: 150px;
+  padding-top: 160px;
   background-image: url("/images/sortiment-background.jpg");
   font-size: 40px;
   color: #080808;
@@ -549,7 +571,7 @@ a {
 
 .sales__headline1,
 .contact__headline1 {
-  padding-top: 150px;
+  padding-top: 160px;
   background-image: url("/images/sortiment-background.jpg");
   font-size: 40px;
   color: #080808;
@@ -704,7 +726,7 @@ a {
 @media screen and (min-width: 640px) {
   .sortiment__doors--download {
     width: 70%;
-    margin: 170px auto 0 auto;
+    margin: 70px auto 0 auto;
   }
 }
 
