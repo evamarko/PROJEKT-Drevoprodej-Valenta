@@ -736,6 +736,18 @@ a {
   filter: brightness(115%);
 }
 
+.sortiment__doors--icon-download {
+  width: 40px;
+}
+
+.sortiment__doors--icon-link {
+  width: 30px;
+}
+
+.sortiment__doors--download p {
+  margin-bottom: 0;
+}
+
 .sales__div.kvh,
 .sales__div.bsh,
 .sales__div.preklizka,
