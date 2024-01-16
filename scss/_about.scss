@@ -80,3 +80,17 @@
 .about__link:hover {
   text-decoration: underline;
 }
+
+//Vánoce dovolená
+.about__christmas {
+  width: 70%;
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 960px) {
+    width: 50%;
+  }
+}
+
+.about__christmas--headline {
+  color: red;
+}
