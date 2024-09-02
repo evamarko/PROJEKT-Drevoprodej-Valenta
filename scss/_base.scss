@@ -44,7 +44,9 @@ a {
 .sortiment,
 .production,
 .services2,
-.contact {
+.contact,
+.error-page,
+.thank-you-page {
   padding: $spacer;
 
   @media screen and (min-width: 540px) {
@@ -61,7 +63,8 @@ a {
 //H1
 .about__headline1,
 .production__headline1,
-.services2__headline1 {
+.services2__headline1,
+.error-page__headline {
   font-size: 40px;
   color: colors.$color-wood-light2;
   text-align: center;
@@ -91,4 +94,11 @@ a {
   @media screen and (min-width: 960px) {
     font-size: 50px;
   }
+}
+
+//Error Page a Thank You Page
+.error-page p,
+.thank-you-page p {
+  text-align: center;
+  font-size: 22px;
 }

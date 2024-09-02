@@ -31,7 +31,9 @@ a {
 .sortiment,
 .production,
 .services2,
-.contact {
+.contact,
+.error-page,
+.thank-you-page {
   padding: 30px;
 }
 @media screen and (min-width: 540px) {
@@ -41,7 +43,9 @@ a {
   .sortiment,
   .production,
   .services2,
-  .contact {
+  .contact,
+  .error-page,
+  .thank-you-page {
     padding: 80px;
   }
 }
@@ -52,7 +56,9 @@ a {
   .sortiment,
   .production,
   .services2,
-  .contact {
+  .contact,
+  .error-page,
+  .thank-you-page {
     padding: 100px;
     max-width: 1200px;
     margin: 0 auto;
@@ -61,7 +67,8 @@ a {
 
 .about__headline1,
 .production__headline1,
-.services2__headline1 {
+.services2__headline1,
+.error-page__headline {
   font-size: 40px;
   color: #8b6914;
   text-align: center;
@@ -70,14 +77,16 @@ a {
 @media screen and (min-width: 540px) {
   .about__headline1,
   .production__headline1,
-  .services2__headline1 {
+  .services2__headline1,
+  .error-page__headline {
     font-size: 50px;
   }
 }
 @media screen and (min-width: 960px) {
   .about__headline1,
   .production__headline1,
-  .services2__headline1 {
+  .services2__headline1,
+  .error-page__headline {
     font-size: 60px;
   }
 }
@@ -102,6 +111,12 @@ a {
   .contact__headline2 {
     font-size: 50px;
   }
+}
+
+.error-page p,
+.thank-you-page p {
+  text-align: center;
+  font-size: 22px;
 }
 
 .header {
@@ -585,7 +600,9 @@ a {
 }
 
 .sales__headline1,
-.contact__headline1 {
+.contact__headline1,
+.error-page__headline1,
+.thank-you-page__headline1 {
   padding-top: 160px;
   background-image: url("/images/sortiment-background.jpg");
   font-size: 40px;
@@ -595,13 +612,17 @@ a {
 }
 @media screen and (min-width: 540px) {
   .sales__headline1,
-  .contact__headline1 {
+  .contact__headline1,
+  .error-page__headline1,
+  .thank-you-page__headline1 {
     font-size: 50px;
   }
 }
 @media screen and (min-width: 960px) {
   .sales__headline1,
-  .contact__headline1 {
+  .contact__headline1,
+  .error-page__headline1,
+  .thank-you-page__headline1 {
     font-size: 60px;
   }
 }

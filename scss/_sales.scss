@@ -2,7 +2,9 @@
 @use "base";
 
 .sales__headline1,
-.contact__headline1 {
+.contact__headline1,
+.error-page__headline1,
+.thank-you-page__headline1 {
   padding-top: 160px;
   background-image: url("/images/sortiment-background.jpg");
   font-size: 40px;
