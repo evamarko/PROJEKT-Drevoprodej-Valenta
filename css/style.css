@@ -907,8 +907,8 @@ a {
 
 .contact__times {
   background-color: #fff8dc;
-  max-width: 270px;
-  padding: 20px;
+  width: 330px;
+  padding: 10px;
   margin: 0 auto;
 }
 @media screen and (min-width: 540px) {
@@ -1141,7 +1141,7 @@ a {
 
 .footer__table {
   text-align: left;
-  max-width: 250px;
+  max-width: auto;
   margin: 0 auto;
 }
 
