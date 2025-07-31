@@ -467,7 +467,12 @@ a {
   background-color: #fff8dc;
   margin: 10% auto;
   padding: 20px;
-  width: 65%;
+  width: 75%;
+}
+@media screen and (min-width: 960px) {
+  .popup__content {
+    width: 50%;
+  }
 }
 
 .close__button {

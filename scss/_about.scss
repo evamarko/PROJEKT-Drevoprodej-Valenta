@@ -112,7 +112,11 @@
   background-color: colors.$color-wood-light;
   margin: 10% auto;
   padding: 20px;
-  width: 65%;
+  width: 75%;
+
+  @media screen and (min-width: 960px) {
+    width: 50%;
+  }
 }
 
 .close__button {
