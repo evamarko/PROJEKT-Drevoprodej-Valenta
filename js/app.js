@@ -7,6 +7,6 @@ function closePopup() {
 }
 
 // Zobrazení popupu při načtení stránky
-window.onload = function () {
-  openPopup();
-};
+//window.onload = function () {
+//  openPopup();
+//};
