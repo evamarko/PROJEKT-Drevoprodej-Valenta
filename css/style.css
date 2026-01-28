@@ -797,7 +797,7 @@ a {
   text-align: left;
 }
 
-.sortiment__doors--download {
+.sortiment__download {
   width: 100%;
   background-color: #8b6914;
   cursor: pointer;
@@ -809,19 +809,19 @@ a {
   margin-top: 30px;
 }
 @media screen and (min-width: 640px) {
-  .sortiment__doors--download {
+  .sortiment__download {
     width: 70%;
     margin: 70px auto 0 auto;
   }
 }
 
-.sortiment__doors--download:hover,
-.sortiment__doors--download:focus,
-.sortiment__doors--download:active {
+.sortiment__download:hover,
+.sortiment__download:focus,
+.sortiment__download:active {
   filter: brightness(115%);
 }
 
-.sortiment__doors--icon-download {
+.sortiment__icon-download {
   width: 40px;
 }
 
@@ -829,7 +829,7 @@ a {
   width: 30px;
 }
 
-.sortiment__doors--download p {
+.sortiment__download p {
   margin-bottom: 0;
 }
 

@@ -94,8 +94,8 @@
   text-align: left;
 }
 
-//Interiérové dveře akční katalog
-.sortiment__doors--download {
+//Ceníky a katalogy ke stažení
+.sortiment__download {
   width: 100%;
   background-color: colors.$color-wood-light2;
   cursor: pointer;
@@ -112,13 +112,13 @@
   }
 }
 
-.sortiment__doors--download:hover,
-.sortiment__doors--download:focus,
-.sortiment__doors--download:active {
+.sortiment__download:hover,
+.sortiment__download:focus,
+.sortiment__download:active {
   filter: brightness(115%);
 }
 
-.sortiment__doors--icon-download {
+.sortiment__icon-download {
   width: 40px;
 }
 
@@ -126,7 +126,7 @@
   width: 30px;
 }
 
-.sortiment__doors--download p {
+.sortiment__download p {
   margin-bottom: 0;
 }
 

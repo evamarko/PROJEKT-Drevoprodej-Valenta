@@ -6,7 +6,7 @@ function closePopup() {
   document.getElementById("myPopup").style.display = "none";
 }
 
-// Zobrazení popupu při načtení stránky
-//window.onload = function () {
-//  openPopup();
-//};
+//Zobrazení popupu při načtení stránky
+window.onload = function () {
+  openPopup();
+};
